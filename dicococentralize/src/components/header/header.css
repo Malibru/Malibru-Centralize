@@ -5,7 +5,7 @@
     font-weight: 400;   
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background-color: #ffffff;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -16,4 +16,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #218838;
+    box-shadow: none;
+    border: none;
+    min-width: 0;
+    margin-bottom: 2rem; /* espaçamento para main */
+}
+
+.header .logo img {
+    max-height: 36px;
+}
+
+.header .nav {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.header .nav a {
+    color: #d4edda;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+}
+
+.header .nav a:hover {
+    color: #a5d6a7;
+}
+
+.header .login/logout {
+    display: flex;
+    align-items: center;
+}
+
+.header .login/logout a {
+    color: #d4edda;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    transition: color 0.2s;
+}
+
+.header .login/logout a:hover {
+    color: #a5d6a7;
 }

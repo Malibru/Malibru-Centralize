@@ -1,0 +1,152 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+  background-color: #fdfdfd; /* Fundo geral mais claro */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #e6f0e6; /* Verde muito claro para a sidebar */
+  border-right: 1px solid #e0e0e0; /* Borda suave */
+  padding: 20px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-btn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #d0d0d0; /* Borda mais suave */
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s, border-color 0.2s;
+  color: #333333; /* Cor do texto */
+}
+
+.sidebar-btn:hover {
+  background-color: #e8e8e8; /* Cinza claro no hover */
+  border-color: #c0c0c0;
+}
+
+.kanban-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #e6f0e6; /* Verde muito claro para as colunas */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.kanban-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #333333; /* Cor do título */
+}
+
+.kanban-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kanban-card {
+  background: white;
+  border: 1px solid #e0e0e0; /* Borda suave */
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+  color: #333333; /* Cor do texto do card */
+}
+
+.kanban-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+
+.kanban-move-btn {
+  background: #386641; /* Verde mais escuro para botões de ação */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.kanban-move-btn:hover {
+  background: #2a4d30; /* Verde ainda mais escuro no hover */
+}
+
+.edit-task-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d0d0d0; /* Borda suave */
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.edit-task-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  background-color: #e6f0e6; /* Verde muito claro para o formulário */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.add-task-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d0d0d0; /* Borda suave */
+  border-radius: 4px;
+  color: #333333;
+}
+
+.add-task-btn {
+  padding: 12px 24px;
+  background: #386641; /* Verde mais escuro para o botão adicionar */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-task-btn:hover {
+  background: #2a4d30; /* Verde ainda mais escuro no hover */
+}

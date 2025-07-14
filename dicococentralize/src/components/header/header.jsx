@@ -1,11 +1,26 @@
 import React from "react";
 import "./header.css";
-const Header = () => {
+
+export default function Header() {
   return (
-    <header>
-      <h1>Dicoco Centralize</h1>
+    <header className="header">
+        <div className="logo">
+            <img src="/logo.png" alt="Logo Dicoco" />    
+        </div>
+        <div>
+            <nav className="nav"> 
+                <a href="#">Home</a>
+                <a href="#">Instagram</a>
+                <a href="#">Site</a>
+                <a href="#">Catalogo</a>
+            </nav>
+        </div>
+        <div className="login/logout">
+            {/* <a href="#">Login</a> */}
+            <a href="#">Logout</a>
+        </div>
     </header>
   );
 };
 
-export default Header;
+

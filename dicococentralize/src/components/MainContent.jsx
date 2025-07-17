@@ -11,8 +11,8 @@ const sidebarItems = [
   "AWS",
   "XML Compras",
   "Automação Power BI",
-  "Controle de Chamados",
-  "Abrir um Chamado",
+  // "Controle de Chamados",
+  // "Abrir um Chamado",
   "Controle de Licenças do Office",
 ]
 

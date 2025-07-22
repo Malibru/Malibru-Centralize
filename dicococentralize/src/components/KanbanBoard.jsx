@@ -1,7 +1,6 @@
 import React from 'react'
 import KanbanColumn from "./KanbanColumn"
 "use client"
-import "../main.css";
 // import './kanbanboard.css'
 
 

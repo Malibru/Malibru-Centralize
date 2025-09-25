@@ -1,29 +1,25 @@
 import React from "react";
-import {Router, Route, Switch} from "react-router-dom";
-import MainPage from "../pages/MainPage.jsx";   
+import { Routes, Route } from "react-router-dom";
+import MainPage from '../pages/MainPage.jsx';   
 import XmlComprasPage from "../pages/XmlCompras.jsx";
 import LicencasPage from "../pages/LicencasPage.jsx";
 import ImporteCtePage from "../pages/ImporCtePage.jsx";
 import ImporteNfePage from "../pages/ImportNfePage.jsx";   
 import AwsPage from "../pages/AwsPage.jsx";
 import AutomacaoPowerBIPage from "../pages/AutomacaoBIPage.jsx";
+import"../assets/css/incialpage.css";
+import"../assets/css/header.css";
 
-
-
-
-export default function Routes({history}) {
+export default function Rotas() {
   return (
-    <Router history={history}>
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route path="/xml-compras" component={XmlComprasPage} />
-        <Route path="/licencas" component={LicencasPage} />
-        <Route path="/importe-cte" component={ImporteCtePage} />
-        <Route path="/importe-nfe" component={ImporteNfePage} />
-        <Route path="/aws" component={AwsPage} />
-        <Route path="/automacao-power-bi" component={AutomacaoPowerBIPage} />
-       
-      </Switch>
-    </Router>
+    <Routes>
+      <Route path="/home" element={<MainPage />} />
+      <Route path="/licencas" element={<LicencasPage />} />
+      <Route path="/xml-compras" element={<XmlComprasPage />} />
+      <Route path="/import-cte" element={<ImporteCtePage />} />
+      <Route path="/import-nfe" element={<ImporteNfePage />} />
+      <Route path="/aws" element={<AwsPage />} />
+      <Route path="/automacao-bi" element={<AutomacaoPowerBIPage />} />
+    </Routes>
   );
 }

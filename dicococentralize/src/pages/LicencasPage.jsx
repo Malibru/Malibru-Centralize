@@ -10,8 +10,8 @@ export default function LicencasPage() {
   const [editEmail, setEditEmail] = useState("")
   const [editVencimento, setEditVencimento] = useState("")
 
-  // Substitua pela URL real da sua API
-  const API_URL = "https://sua-api.com/licencas"
+ 
+  const API_URL = ""
 
   useEffect(() => {
     async function fetchLicencas() {
